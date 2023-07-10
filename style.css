@@ -1,0 +1,257 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  color: white;
+  overflow: hidden;
+}
+.sidebar {
+  width: 20vw;
+  padding: 12px 0px 12px 12px;
+  height: 100vh;
+  background-color: #202123;
+}
+.svg-hide {
+  height: 16px;
+  width: 16px;
+}
+.s-1-container {
+  display: flex;
+  gap: 5px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.new-chat {
+  border: 1px solid #8080805c;
+  padding: 12px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 14px;
+  border-radius: 0.375rem;
+}
+.hide-bar {
+  border: 1px solid #8080805c;
+  border-radius: 0.375rem;
+  padding: 12px;
+  margin-right: 12px;
+}
+.side-scroll {
+  overflow-y: scroll;
+  height: 72vh;
+}
+
+.side-scroll::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.side-scroll::-webkit-scrollbar-track {
+  background: #202123; /* color of the tracking area */
+}
+
+.side-scroll::-webkit-scrollbar-thumb {
+  background-color: silver; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+
+.s-2-container p {
+  color: #8e8ea0;
+  font-size: 12px;
+  position: sticky;
+  top: 0;
+}
+.ref-1 {
+  display: flex;
+  /* border: 1px solid rgb(151, 151, 151); */
+  padding: 12px;
+  text-overflow: ellipsis;
+  border-radius: 0.375rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.hidden-svg {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.svg-ctr {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ref-1 {
+  position: relative;
+}
+.ref-1:hover .hidden-svg {
+  opacity: 1;
+}
+
+.lft-ctr {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.ref-1:hover {
+  background-color: #343541;
+  transition: 0.2s;
+}
+.ref-1 span {
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.model-container {
+  display: flex;
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+}
+.box {
+  width: 260px;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  border-top: 0.5px solid#8080805c;
+  padding-top: 9px;
+  background-color: #202123;
+}
+.upgrade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background-color: #202123;
+}
+.upgrade:hover {
+  background-color: #343541;
+  border-radius: 0.375rem;
+  transition: 0.3s;
+}
+.upgrade span {
+  background-color: #fae69e;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 0.375rem;
+  color: rgb(0, 0, 0);
+}
+.svg-upgr {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.user p {
+  background-color: green;
+  padding: 10px;
+  width: 14px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 14px;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.v-img {
+  border-radius: 3px;
+}
+.box p {
+  color: white;
+  font-size: 14px;
+}
+.content {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.content-box {
+  height: 100vh;
+  background-color: #343541;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+  padding-top: 20px;
+}
+
+.c-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-1 {
+  /* border: 1px solid white; */
+  width: 230px;
+  text-align: center;
+  background-color: #3e3f4b;
+  margin-bottom: 10px;
+  border-radius: 0.375rem;
+}
+.cont-1 p{
+  padding: 12px;
+  margin: 0;
+}
+.main-content {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.suggestions :hover {
+  background-color:#202123;
+  transition: 0.5s;
+}
+.c-1 p{
+font-size: 12px;
+}
+.input-box{
+  width: 780px;
+  display: flex;
+  padding: 16px 0 16px 16px;
+  margin: auto;
+  background-color: #40414f;
+  justify-content: center;
+  border-radius:0.375rem;
+  box-shadow: rgba(0, 0, 0, 0.247) 0px 7px 29px 0px;
+}
+.inp{
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background-color:#40414f;
+  color: white;
+  padding:0 48px 0 0;
+  
+  
+}
+.inp-parent{
+  height: 15vh;
+  background-color:#343541;
+  position: sticky;
+  bottom: 0;
+}
+.inp-parent p{
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
